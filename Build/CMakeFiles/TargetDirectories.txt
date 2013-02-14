@@ -1,2 +1,0 @@
-/Users/jerry/Workspace/lord/Build/Src/Core/CMakeFiles/libCore.dir
-/Users/jerry/Workspace/lord/Build/Src/Test/CMakeFiles/test.dir
