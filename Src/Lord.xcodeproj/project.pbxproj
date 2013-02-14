@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C42B179C16BC2B130017DE35 /* LordMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C42B178916BC2B130017DE35 /* LordMath.cpp */; };
+		C42B179D16BC2B130017DE35 /* LordMath.h in Headers */ = {isa = PBXBuildFile; fileRef = C42B178A16BC2B130017DE35 /* LordMath.h */; };
+		C42B179E16BC2B130017DE35 /* Mat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C42B178B16BC2B130017DE35 /* Mat.cpp */; };
+		C42B179F16BC2B130017DE35 /* Mat.h in Headers */ = {isa = PBXBuildFile; fileRef = C42B178C16BC2B130017DE35 /* Mat.h */; };
+		C42B17A016BC2B130017DE35 /* MathLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C42B178E16BC2B130017DE35 /* MathLib.cpp */; };
+		C42B17A116BC2B130017DE35 /* MathLib.h in Headers */ = {isa = PBXBuildFile; fileRef = C42B178F16BC2B130017DE35 /* MathLib.h */; };
+		C42B17A416BC2B130017DE35 /* Vec2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C42B179316BC2B130017DE35 /* Vec2.cpp */; };
+		C42B17A516BC2B130017DE35 /* Vec2.h in Headers */ = {isa = PBXBuildFile; fileRef = C42B179416BC2B130017DE35 /* Vec2.h */; };
+		C42B17A616BC2B130017DE35 /* Vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C42B179616BC2B130017DE35 /* Vec3.cpp */; };
+		C42B17A716BC2B130017DE35 /* Vec3.h in Headers */ = {isa = PBXBuildFile; fileRef = C42B179716BC2B130017DE35 /* Vec3.h */; };
+		C42B17A816BC2B130017DE35 /* Vec4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C42B179916BC2B130017DE35 /* Vec4.cpp */; };
+		C42B17A916BC2B130017DE35 /* Vec4.h in Headers */ = {isa = PBXBuildFile; fileRef = C42B179A16BC2B130017DE35 /* Vec4.h */; };
+		C438374116B58D3B009F2D5A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C438374016B58D3B009F2D5A /* main.cpp */; };
+		C438375216B58E6A009F2D5A /* CoreStd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C438374E16B58E21009F2D5A /* CoreStd.cpp */; };
+		C4A5DF3A16B6C9AC00DC4D4A /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A5DF3816B6C9AC00DC4D4A /* StringUtil.cpp */; };
+		C4A5DF4416B6E8ED00DC4D4A /* libLordCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C438374616B58D64009F2D5A /* libLordCore.dylib */; };
+		C4A6F53E16B97E0D00BC7041 /* AssertX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A6F53C16B97E0D00BC7041 /* AssertX.cpp */; };
+		C4A6F54516BA4E8200BC7041 /* Guid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A6F54216BA48A700BC7041 /* Guid.cpp */; };
+		C4A6F54916BA676800BC7041 /* PathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A6F54716BA676800BC7041 /* PathUtil.cpp */; };
+		C4A6F54C16BAB5BC00BC7041 /* MemTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A6F54B16BAB5BC00BC7041 /* MemTracker.cpp */; };
+		C4A6F54D16BAB74500BC7041 /* MemTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A5DF3216B6C73800DC4D4A /* MemTracker.h */; };
+		C4A6F54E16BAB74500BC7041 /* StringUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A5DF3916B6C9AC00DC4D4A /* StringUtil.h */; };
+		C4A6F54F16BAB74500BC7041 /* AssertX.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A6F53D16B97E0D00BC7041 /* AssertX.h */; };
+		C4A6F55016BAB74600BC7041 /* Guid.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A6F54116BA48A700BC7041 /* Guid.h */; };
+		C4A6F55116BAB74600BC7041 /* PathUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A6F54816BA676800BC7041 /* PathUtil.h */; };
+		C4A6F55216BAB74600BC7041 /* TypeDef.h in Headers */ = {isa = PBXBuildFile; fileRef = C438375B16B59B30009F2D5A /* TypeDef.h */; };
+		C4A6F55316BAB74600BC7041 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C438375A16B59B1E009F2D5A /* Core.h */; };
+		C4A6F55416BAB74600BC7041 /* CoreDef.h in Headers */ = {isa = PBXBuildFile; fileRef = C438374D16B58E21009F2D5A /* CoreDef.h */; };
+		C4A6F55516BAB74600BC7041 /* CoreStd.h in Headers */ = {isa = PBXBuildFile; fileRef = C438374F16B58E21009F2D5A /* CoreStd.h */; };
+		C4A6F55B16BAC0CB00BC7041 /* MemAllocDef.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A6F55A16BAC0CB00BC7041 /* MemAllocDef.h */; };
+		C4A6F56416BACD1C00BC7041 /* MemAllocObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A6F56016BACD1C00BC7041 /* MemAllocObj.cpp */; };
+		C4A6F56516BACD1C00BC7041 /* MemAllocObj.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A6F56116BACD1C00BC7041 /* MemAllocObj.h */; };
+		C4A6F56616BACD1C00BC7041 /* MemNedPooling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A6F56216BACD1C00BC7041 /* MemNedPooling.cpp */; };
+		C4A6F56716BACD1C00BC7041 /* MemNedPooling.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A6F56316BACD1C00BC7041 /* MemNedPooling.h */; };
+		C4A6F56A16BACD5200BC7041 /* LordMemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4A6F56816BACD5100BC7041 /* LordMemory.cpp */; };
+		C4A6F56B16BACD5200BC7041 /* LordMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A6F56916BACD5200BC7041 /* LordMemory.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C438374A16B58D8B009F2D5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C438371116B50160009F2D5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C438374516B58D64009F2D5A;
+			remoteInfo = Core;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C438371816B50160009F2D5A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C42B178916BC2B130017DE35 /* LordMath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LordMath.cpp; path = Core/Math/LordMath.cpp; sourceTree = "<group>"; };
+		C42B178A16BC2B130017DE35 /* LordMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LordMath.h; path = Core/Math/LordMath.h; sourceTree = "<group>"; };
+		C42B178B16BC2B130017DE35 /* Mat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Mat.cpp; path = Core/Math/Mat.cpp; sourceTree = "<group>"; };
+		C42B178C16BC2B130017DE35 /* Mat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mat.h; path = Core/Math/Mat.h; sourceTree = "<group>"; };
+		C42B178D16BC2B130017DE35 /* Mat.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Mat.inl; path = Core/Math/Mat.inl; sourceTree = "<group>"; };
+		C42B178E16BC2B130017DE35 /* MathLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MathLib.cpp; path = Core/Math/MathLib.cpp; sourceTree = "<group>"; };
+		C42B178F16BC2B130017DE35 /* MathLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MathLib.h; path = Core/Math/MathLib.h; sourceTree = "<group>"; };
+		C42B179316BC2B130017DE35 /* Vec2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vec2.cpp; path = Core/Math/Vec2.cpp; sourceTree = "<group>"; };
+		C42B179416BC2B130017DE35 /* Vec2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vec2.h; path = Core/Math/Vec2.h; sourceTree = "<group>"; };
+		C42B179516BC2B130017DE35 /* Vec2.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vec2.inl; path = Core/Math/Vec2.inl; sourceTree = "<group>"; };
+		C42B179616BC2B130017DE35 /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vec3.cpp; path = Core/Math/Vec3.cpp; sourceTree = "<group>"; };
+		C42B179716BC2B130017DE35 /* Vec3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vec3.h; path = Core/Math/Vec3.h; sourceTree = "<group>"; };
+		C42B179816BC2B130017DE35 /* Vec3.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vec3.inl; path = Core/Math/Vec3.inl; sourceTree = "<group>"; };
+		C42B179916BC2B130017DE35 /* Vec4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Vec4.cpp; path = Core/Math/Vec4.cpp; sourceTree = "<group>"; };
+		C42B179A16BC2B130017DE35 /* Vec4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vec4.h; path = Core/Math/Vec4.h; sourceTree = "<group>"; };
+		C42B179B16BC2B130017DE35 /* Vec4.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Vec4.inl; path = Core/Math/Vec4.inl; sourceTree = "<group>"; };
+		C438371A16B50160009F2D5A /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
+		C438373F16B58D3B009F2D5A /* Lord.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; name = Lord.1; path = Test/Lord.1; sourceTree = SOURCE_ROOT; };
+		C438374016B58D3B009F2D5A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Test/main.cpp; sourceTree = SOURCE_ROOT; };
+		C438374616B58D64009F2D5A /* libLordCore.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libLordCore.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C438374D16B58E21009F2D5A /* CoreDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDef.h; path = Core/CoreDef.h; sourceTree = "<group>"; };
+		C438374E16B58E21009F2D5A /* CoreStd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CoreStd.cpp; path = Core/CoreStd.cpp; sourceTree = "<group>"; };
+		C438374F16B58E21009F2D5A /* CoreStd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreStd.h; path = Core/CoreStd.h; sourceTree = "<group>"; };
+		C438375A16B59B1E009F2D5A /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Core/Core.h; sourceTree = "<group>"; };
+		C438375B16B59B30009F2D5A /* TypeDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeDef.h; path = Core/TypeDef.h; sourceTree = "<group>"; };
+		C4A5DF3216B6C73800DC4D4A /* MemTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = MemTracker.h; path = Core/Memory/MemTracker.h; sourceTree = "<group>"; };
+		C4A5DF3816B6C9AC00DC4D4A /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; name = StringUtil.cpp; path = Core/Util/StringUtil.cpp; sourceTree = "<group>"; };
+		C4A5DF3916B6C9AC00DC4D4A /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = StringUtil.h; path = Core/Util/StringUtil.h; sourceTree = "<group>"; };
+		C4A6F53C16B97E0D00BC7041 /* AssertX.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AssertX.cpp; path = Core/Util/AssertX.cpp; sourceTree = "<group>"; };
+		C4A6F53D16B97E0D00BC7041 /* AssertX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssertX.h; path = Core/Util/AssertX.h; sourceTree = "<group>"; };
+		C4A6F54116BA48A700BC7041 /* Guid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Guid.h; path = Core/Util/Guid.h; sourceTree = "<group>"; };
+		C4A6F54216BA48A700BC7041 /* Guid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Guid.cpp; path = Core/Util/Guid.cpp; sourceTree = "<group>"; };
+		C4A6F54716BA676800BC7041 /* PathUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PathUtil.cpp; path = Core/Util/PathUtil.cpp; sourceTree = "<group>"; };
+		C4A6F54816BA676800BC7041 /* PathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PathUtil.h; path = Core/Util/PathUtil.h; sourceTree = "<group>"; };
+		C4A6F54B16BAB5BC00BC7041 /* MemTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MemTracker.cpp; path = Core/Memory/MemTracker.cpp; sourceTree = "<group>"; };
+		C4A6F55A16BAC0CB00BC7041 /* MemAllocDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemAllocDef.h; path = Core/Memory/MemAllocDef.h; sourceTree = "<group>"; };
+		C4A6F56016BACD1C00BC7041 /* MemAllocObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MemAllocObj.cpp; path = Core/Memory/MemAllocObj.cpp; sourceTree = "<group>"; };
+		C4A6F56116BACD1C00BC7041 /* MemAllocObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemAllocObj.h; path = Core/Memory/MemAllocObj.h; sourceTree = "<group>"; };
+		C4A6F56216BACD1C00BC7041 /* MemNedPooling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MemNedPooling.cpp; path = Core/Memory/MemNedPooling.cpp; sourceTree = "<group>"; };
+		C4A6F56316BACD1C00BC7041 /* MemNedPooling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemNedPooling.h; path = Core/Memory/MemNedPooling.h; sourceTree = "<group>"; };
+		C4A6F56816BACD5100BC7041 /* LordMemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LordMemory.cpp; path = Core/Memory/LordMemory.cpp; sourceTree = "<group>"; };
+		C4A6F56916BACD5200BC7041 /* LordMemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LordMemory.h; path = Core/Memory/LordMemory.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C438371716B50160009F2D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A5DF4416B6E8ED00DC4D4A /* libLordCore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C438374316B58D64009F2D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C438370F16B50160009F2D5A = {
+			isa = PBXGroup;
+			children = (
+				C438374C16B58DB0009F2D5A /* Core */,
+				C438371D16B50160009F2D5A /* Test */,
+				C438371B16B50160009F2D5A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C438371B16B50160009F2D5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C438371A16B50160009F2D5A /* Test */,
+				C438374616B58D64009F2D5A /* libLordCore.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C438371D16B50160009F2D5A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				C438373F16B58D3B009F2D5A /* Lord.1 */,
+				C438374016B58D3B009F2D5A /* main.cpp */,
+			);
+			name = Test;
+			path = Lord;
+			sourceTree = "<group>";
+		};
+		C438374C16B58DB0009F2D5A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C4A6F56C16BAD15400BC7041 /* Math */,
+				C438375716B5972B009F2D5A /* Memory */,
+				C4A5DF3716B6C96200DC4D4A /* Util */,
+				C438375B16B59B30009F2D5A /* TypeDef.h */,
+				C438375A16B59B1E009F2D5A /* Core.h */,
+				C438374D16B58E21009F2D5A /* CoreDef.h */,
+				C438374E16B58E21009F2D5A /* CoreStd.cpp */,
+				C438374F16B58E21009F2D5A /* CoreStd.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C438375716B5972B009F2D5A /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				C4A6F56816BACD5100BC7041 /* LordMemory.cpp */,
+				C4A6F56916BACD5200BC7041 /* LordMemory.h */,
+				C4A6F56016BACD1C00BC7041 /* MemAllocObj.cpp */,
+				C4A6F56116BACD1C00BC7041 /* MemAllocObj.h */,
+				C4A6F56216BACD1C00BC7041 /* MemNedPooling.cpp */,
+				C4A6F56316BACD1C00BC7041 /* MemNedPooling.h */,
+				C4A6F55A16BAC0CB00BC7041 /* MemAllocDef.h */,
+				C4A6F54B16BAB5BC00BC7041 /* MemTracker.cpp */,
+				C4A5DF3216B6C73800DC4D4A /* MemTracker.h */,
+			);
+			name = Memory;
+			sourceTree = "<group>";
+		};
+		C4A5DF3716B6C96200DC4D4A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C4A5DF3816B6C9AC00DC4D4A /* StringUtil.cpp */,
+				C4A5DF3916B6C9AC00DC4D4A /* StringUtil.h */,
+				C4A6F53C16B97E0D00BC7041 /* AssertX.cpp */,
+				C4A6F53D16B97E0D00BC7041 /* AssertX.h */,
+				C4A6F54116BA48A700BC7041 /* Guid.h */,
+				C4A6F54216BA48A700BC7041 /* Guid.cpp */,
+				C4A6F54716BA676800BC7041 /* PathUtil.cpp */,
+				C4A6F54816BA676800BC7041 /* PathUtil.h */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		C4A6F56C16BAD15400BC7041 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				C42B178916BC2B130017DE35 /* LordMath.cpp */,
+				C42B178A16BC2B130017DE35 /* LordMath.h */,
+				C42B178B16BC2B130017DE35 /* Mat.cpp */,
+				C42B178C16BC2B130017DE35 /* Mat.h */,
+				C42B178D16BC2B130017DE35 /* Mat.inl */,
+				C42B178E16BC2B130017DE35 /* MathLib.cpp */,
+				C42B178F16BC2B130017DE35 /* MathLib.h */,
+				C42B179316BC2B130017DE35 /* Vec2.cpp */,
+				C42B179416BC2B130017DE35 /* Vec2.h */,
+				C42B179516BC2B130017DE35 /* Vec2.inl */,
+				C42B179616BC2B130017DE35 /* Vec3.cpp */,
+				C42B179716BC2B130017DE35 /* Vec3.h */,
+				C42B179816BC2B130017DE35 /* Vec3.inl */,
+				C42B179916BC2B130017DE35 /* Vec4.cpp */,
+				C42B179A16BC2B130017DE35 /* Vec4.h */,
+				C42B179B16BC2B130017DE35 /* Vec4.inl */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C438374416B58D64009F2D5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A6F54D16BAB74500BC7041 /* MemTracker.h in Headers */,
+				C4A6F54E16BAB74500BC7041 /* StringUtil.h in Headers */,
+				C4A6F54F16BAB74500BC7041 /* AssertX.h in Headers */,
+				C4A6F55016BAB74600BC7041 /* Guid.h in Headers */,
+				C4A6F55116BAB74600BC7041 /* PathUtil.h in Headers */,
+				C4A6F55216BAB74600BC7041 /* TypeDef.h in Headers */,
+				C4A6F55316BAB74600BC7041 /* Core.h in Headers */,
+				C4A6F55416BAB74600BC7041 /* CoreDef.h in Headers */,
+				C4A6F55516BAB74600BC7041 /* CoreStd.h in Headers */,
+				C4A6F55B16BAC0CB00BC7041 /* MemAllocDef.h in Headers */,
+				C4A6F56516BACD1C00BC7041 /* MemAllocObj.h in Headers */,
+				C4A6F56716BACD1C00BC7041 /* MemNedPooling.h in Headers */,
+				C4A6F56B16BACD5200BC7041 /* LordMemory.h in Headers */,
+				C42B179D16BC2B130017DE35 /* LordMath.h in Headers */,
+				C42B179F16BC2B130017DE35 /* Mat.h in Headers */,
+				C42B17A116BC2B130017DE35 /* MathLib.h in Headers */,
+				C42B17A516BC2B130017DE35 /* Vec2.h in Headers */,
+				C42B17A716BC2B130017DE35 /* Vec3.h in Headers */,
+				C42B17A916BC2B130017DE35 /* Vec4.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C438371916B50160009F2D5A /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C438372416B50160009F2D5A /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				C438371616B50160009F2D5A /* Sources */,
+				C438371716B50160009F2D5A /* Frameworks */,
+				C438371816B50160009F2D5A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C438374B16B58D8B009F2D5A /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Lord;
+			productReference = C438371A16B50160009F2D5A /* Test */;
+			productType = "com.apple.product-type.tool";
+		};
+		C438374516B58D64009F2D5A /* Core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C438374716B58D64009F2D5A /* Build configuration list for PBXNativeTarget "Core" */;
+			buildPhases = (
+				C438374216B58D64009F2D5A /* Sources */,
+				C438374316B58D64009F2D5A /* Frameworks */,
+				C438374416B58D64009F2D5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Core;
+			productName = Core;
+			productReference = C438374616B58D64009F2D5A /* libLordCore.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C438371116B50160009F2D5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Lord;
+			};
+			buildConfigurationList = C438371416B50160009F2D5A /* Build configuration list for PBXProject "Lord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C438370F16B50160009F2D5A;
+			productRefGroup = C438371B16B50160009F2D5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C438371916B50160009F2D5A /* Test */,
+				C438374516B58D64009F2D5A /* Core */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C438371616B50160009F2D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C438374116B58D3B009F2D5A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C438374216B58D64009F2D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A6F54516BA4E8200BC7041 /* Guid.cpp in Sources */,
+				C438375216B58E6A009F2D5A /* CoreStd.cpp in Sources */,
+				C4A5DF3A16B6C9AC00DC4D4A /* StringUtil.cpp in Sources */,
+				C4A6F53E16B97E0D00BC7041 /* AssertX.cpp in Sources */,
+				C4A6F54916BA676800BC7041 /* PathUtil.cpp in Sources */,
+				C4A6F54C16BAB5BC00BC7041 /* MemTracker.cpp in Sources */,
+				C4A6F56416BACD1C00BC7041 /* MemAllocObj.cpp in Sources */,
+				C4A6F56616BACD1C00BC7041 /* MemNedPooling.cpp in Sources */,
+				C4A6F56A16BACD5200BC7041 /* LordMemory.cpp in Sources */,
+				C42B179C16BC2B130017DE35 /* LordMath.cpp in Sources */,
+				C42B179E16BC2B130017DE35 /* Mat.cpp in Sources */,
+				C42B17A016BC2B130017DE35 /* MathLib.cpp in Sources */,
+				C42B17A416BC2B130017DE35 /* Vec2.cpp in Sources */,
+				C42B17A616BC2B130017DE35 /* Vec3.cpp in Sources */,
+				C42B17A816BC2B130017DE35 /* Vec4.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C438374B16B58D8B009F2D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C438374516B58D64009F2D5A /* Core */;
+			targetProxy = C438374A16B58D8B009F2D5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C438372216B50160009F2D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C438372316B50160009F2D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C438372516B50160009F2D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+			};
+			name = Debug;
+		};
+		C438372616B50160009F2D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+			};
+			name = Release;
+		};
+		C438374816B58D64009F2D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				EXECUTABLE_PREFIX = libLord;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/$(TARGET_NAME)",
+					"$(SRCROOT)/../Dependencies/nedmalloc/Include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+			};
+			name = Debug;
+		};
+		C438374916B58D64009F2D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				EXECUTABLE_PREFIX = libLord;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/$(TARGET_NAME)",
+					"$(SRCROOT)/../Dependencies/nedmalloc/Include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C438371416B50160009F2D5A /* Build configuration list for PBXProject "Lord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C438372216B50160009F2D5A /* Debug */,
+				C438372316B50160009F2D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C438372416B50160009F2D5A /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C438372516B50160009F2D5A /* Debug */,
+				C438372616B50160009F2D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C438374716B58D64009F2D5A /* Build configuration list for PBXNativeTarget "Core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C438374816B58D64009F2D5A /* Debug */,
+				C438374916B58D64009F2D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C438371116B50160009F2D5A /* Project object */;
+}
