@@ -1,0 +1,1 @@
+/usr/bin/clang++   -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/test.dir/main.cpp.o  -o ../../../Bin/test  -L/Users/jerry/Workspace/lord/SDK/iOS/lib/Release  ../../../SDK/iOS/lib/Release/libLordCore.dylib 
