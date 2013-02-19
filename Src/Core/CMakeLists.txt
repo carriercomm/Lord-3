@@ -3,6 +3,7 @@ message(STATUS "Configuring module: Core …")
 include_directories(
   ${LORD_SRC_PATH}/Core
   ${LORD_DEP_PATH}/nedmalloc/Include
+  ${LORD_DEP_PATH}/dirent/Include
 )
 
 set(LIB_SRC 
