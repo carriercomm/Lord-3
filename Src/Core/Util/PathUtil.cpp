@@ -1,4 +1,4 @@
-#include "CoreStd.h"
+﻿#include "CoreStd.h"
 #include "PathUtil.h"
 #include "StringUtil.h"
 
