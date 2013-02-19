@@ -7,11 +7,17 @@
 #	define _CRT_SECURE_NO_WARNINGS
 #	include <Windows.h>
 #	include <Windowsx.h>
-#	define LordOutputCString(str) ::OutputDebugStringA(str)
-#	define LordOutputCString(str) ::OutputDebugStringW(str)
+#	if (LORD_CHARSET == LORD_CHARSET_UNICODE)
+#		define LordOutputCString(str) ::OutputDebugStringW(str)
+#	else
+#		define LordOutputCString(str) ::OutputDebugStringA(str)
+#	endif
 #else
-#	define LordOutputCString(str) std::cerr << str
-#	define LordOutputCString(str) std::cerr << str
+#	if (LORD_CHARSET == LORD_CHARSET_UNICODE)
+#		define LordOutputCString(str) std::wcerr << str
+#	else
+#		define LordOutputCString(str) std::cerr << str
+#	endif
 #endif
 
 LORD_NAMESPACE_BEGIN

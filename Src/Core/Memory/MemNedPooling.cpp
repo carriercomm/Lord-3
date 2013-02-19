@@ -4,7 +4,7 @@
 #ifdef LORD_MEMORY_ALLOCATOR_NEDPOOLING
 
 // include Ned implementation
-#pragma warning(disable: 4005)
+#pragma warning(disable: 4005 4267)
 #include <nedmalloc.c>
 
 LORD_NAMESPACE_BEGIN

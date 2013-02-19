@@ -30,7 +30,7 @@ if (!_ignoreAssert && !(x)) \
 	} \
 	else if (_err_result == ERRRET_BREAKPOINT) \
 	{ \
-		_asm{int 3}; \
+		abort(); \
 	} \
 }}
 

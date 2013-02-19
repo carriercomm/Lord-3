@@ -211,14 +211,14 @@ bool StringUtil::Equal(const String &str1, const String &str2, bool bCaseSensiti
 std::string StringUtil::WCS2MBS(const std::wstring &str)
 {	
 #	if (LORD_PLATFORM == LORD_PLATFORM_WINDOWS)
-	int size = WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, NULL, 0);
+	int size = WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, NULL, 0, NULL, NULL);
 #	else
 	size_t size = wcstombs(NULL, str.c_str(), 0);
 #	endif
 	
 	std::string mbstr(size, wchar_t(0));
 #	if (LORD_PLATFORM == LORD_PLATFORM_WINDOWS)
-	WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, const_cast<char*>(mbstr.c_str()), size);
+	WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, const_cast<char*>(mbstr.c_str()), size, NULL, NULL);
 #	else
 	wcstombs(const_cast<char*>(mbstr.c_str()), const_cast<wchar_t*>(str.c_str()), (size+1)*4);
 #	endif
@@ -270,14 +270,14 @@ String StringUtil::ConvStr(const std::wstring &str)
 #else
 	
 #	if (LORD_PLATFORM == LORD_PLATFORM_WINDOWS)
-	int size = WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, NULL, 0);
+	int size = WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, NULL, 0, NULL, NULL);
 #	else
 	size_t size = wcstombs(NULL, str.c_str(), 0);
 #	endif
 	
 	std::string mbstr(size, wchar_t(0));
 #	if (LORD_PLATFORM == LORD_PLATFORM_WINDOWS)
-	WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, const_cast<char*>(mbstr.c_str()), size);
+	WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, const_cast<char*>(mbstr.c_str()), size, NULL, NULL);
 #	else
 	wcstombs(const_cast<char*>(mbstr.c_str()), const_cast<wchar_t*>(str.c_str()), (size+1)*4);
 #	endif

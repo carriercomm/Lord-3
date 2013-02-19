@@ -3,7 +3,7 @@
 //  Core
 //
 //  Created by jerry on 13-1-26.
-//  Copyright (c) 2013å¹´ Lord. All rights reserved.
+//  Copyright (c) 2013Äê Lord. All rights reserved.
 //
 
 #include "CoreStd.h"

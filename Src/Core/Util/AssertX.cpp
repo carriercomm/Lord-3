@@ -7,6 +7,8 @@
 #	define WIN32_LEAN_AND_MEAN
 #	define _CRT_SECURE_NO_WARNINGS
 #	include <Windows.h>
+#	undef _T
+#	include <tchar.h>
 #endif
 
 LORD_NAMESPACE_BEGIN
@@ -48,7 +50,7 @@ ErrRet DisplayError(const tchar *errorTitle,
 	// place a copy of the message into the clipboard
 	if (OpenClipboard(NULL))
 	{
-		Dword bufferLength = _tcsclen(buffer);
+		size_t bufferLength = _tcsclen(buffer);
 		HGLOBAL hMem = GlobalAlloc(GHND|GMEM_DDESHARE, bufferLength+1);
 		
 		if (hMem)
@@ -120,7 +122,7 @@ ErrRet NotifyAssert(const tchar *condition, const char *fileName, int lineNumber
 	String msg = StringUtil::Format(formats, va_pass(args));
 	va_end(args);
 	
-	String filenameStr = StringUtil::ToString(fileName);
+	String filenameStr = StringUtil::ConvStr(fileName);
 	
 	// pass the data on to the message box
 	ErrRet result = DisplayError(_T("Assert Failed!"),

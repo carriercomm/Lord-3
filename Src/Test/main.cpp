@@ -22,7 +22,7 @@ USING_LORD_NAMESPACE
 int main(int argc, const char * argv[])
 {
 	setlocale(LC_ALL, "zh_CN.UTF-8");
-	String str = StringUtil::ConvStr("啊萨帝");
+	String str = StringUtil::ConvStr("");
 	
 	//test();
 	

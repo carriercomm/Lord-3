@@ -5,6 +5,9 @@
 #if (LORD_PLATFORM == LORD_PLATFORM_WINDOWS)
 #	include <dirent.h>
 #	include <direct.h>
+#	if (LORD_COMPILER == LORD_COMPILER_MSVC)
+#		pragma warning(disable: 4996)
+#	endif
 #else
 #	include <unistd.h>
 #	include <sys/stat.h>
